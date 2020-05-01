@@ -72,21 +72,21 @@ button {
 
 		.popup__order-call input,
 		.popup__order-project input {
-			width: 250px;
+			min-width: 250px;
 			font-size: 16px;
 		}
 
 		.popup__order-project textarea {
-			width: 280px;
-			height: 50px;
+			min-width: 280px;
+			min-height: 50px;
 			font-size: 16px;
 			resize: none;
 		}
 
 		.popup__order-call__button,
 		.popup__order-project__button {
-			width: 120px;
-			height: 40px;
+			min-width: 120px;
+			min-height: 40px;
 			background: linear-gradient(to right top, #FE8D5A, #FE2D99);
 			color: #FFFFFF;
 			font-size: 18px;
@@ -167,7 +167,7 @@ button {
 		.menu-open {
 			display: none;
 			z-index: 1;
-			width: 320px;
+			min-width: 320px;
 			background: linear-gradient(to right top, #FC8E59, #FE2F96);
 			position: absolute;
 			top: 75px;
@@ -221,8 +221,8 @@ button {
 			}
 
 			.header-call button {
-				width: 205px;
-				height: 45px;
+				min-width: 205px;
+				min-height: 45px;
 				background-color: #FBFBFB;
 				color: #F54A57;
 				font-size: 16px;
@@ -249,7 +249,7 @@ button {
 	/*Main-presentation*/
 
 	.main-presentation {
-		height: 660px;
+		min-height: 660px;
 		background-color: #FBFBFB;
 		display: flex;
 		overflow: hidden;
@@ -284,8 +284,8 @@ button {
 			}
 
 			.main-presentation-info button {
-				width: 270px;
-				height: 60px;
+				min-width: 270px;
+				min-height: 60px;
 				color: #FAE8E6;
 				background-color: #FE4E2E;
 				font-size: 18px;
@@ -407,8 +407,8 @@ button {
 			}
 
 		.main-works button {
-			width: 270px;
-			height: 60px;
+			min-width: 270px;
+			min-height: 60px;
 			background-color: #FE4E2E;
 			color: #FFFFFF;
 			font-size: 20px;
@@ -515,8 +515,8 @@ button {
   		}
 
 		#order-project {
-			width: 270px;
-			height: 60px;
+			min-width: 270px;
+			min-height: 60px;
 			background-color: #FE4E2E;
 			color: #FFFFFF;
 			font-size: 20px;
@@ -625,8 +625,8 @@ button {
 			}
 
 			.footer-container__right button {
-				width: 248px;
-				height: 45px;
+				min-width: 248px;
+				min-height: 45px;
 				background-color: #FFFFFF;
 				color: #F54A57;
 				font-size: 16px;
