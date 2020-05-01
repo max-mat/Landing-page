@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FINAL PROJECT</title>
+
+	<!--Favicon-->
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!--Fonts-->
+
+	<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-900.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<!--Slick-Slider-->
+
+	<link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="media.css">
+
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="slick-1.8.1/slick/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+	<!--Pop-up with modal window-->
+
+	<div class="popup-container__order-call">
+		<div class="popup__order-call">
+			<button class="popup__order-call__close" aria-label="close"><i class="fa fa-close fa-2x"></i></button>
+			<p>Введите Ваше Имя:</p>
+			<form action="#" name="name">
+				<input class="popup__order-call__name" type="text" name="login" placeholder="Фамилия Имя Отчество">
+			</form>
+			<p>Введите Ваш контактный телефон:</p>
+			<form action="#" name="name">
+				<input class="popup__order-call__tel" type="text" name="tel" placeholder="+7 (926) 123-45-67">
+			</form>
+			<p>Введите Ваш email:</p>
+			<form action="#" name="name">
+				<input class="popup__order-call__mail" type="email" name="mail" placeholder="my_email_adress@gmail.com">
+			</form>
+			<button class="popup__order-call__button" aria-label="send">Готово!</button>
+		</div>
+	</div>
+
+	<div class="popup-container__order-project">
+		<div class="popup__order-project">
+			<button class="popup__order-project__close" aria-label="close"><i class="fa fa-close fa-2x"></i></button>
+			<p>Сроки реализации:</p>
+			<form action="#" name="name">
+				<input class="popup__order-project__deadline" type="text" name="deadline" placeholder="До сентября 2020 года">
+			</form>
+			<p>Описание проекта:</p>
+			<form action="#" name="name">
+				<textarea class="popup__order-project__info" name="info" placeholder="Сайт книжного интернет-магазина"></textarea> 
+			</form>
+			<p>Введите Ваш email:</p>
+			<form action="#" name="name">
+				<input class="popup__order-project__mail" type="email" name="mail" placeholder="my_email_adress@gmail.com">
+			</form>
+			<button class="popup__order-project__button" aria-label="send">Заказать!</button>
+		</div>
+	</div>
+
+	<!--Header-->
+
+	<div class="header">
+		<div class="header-container">
+			<ul class="header-menu">
+				<li class="header-menu__item"><a href="#services">Услуги</a></li>
+				<li class="header-menu__item"><a href="#portfolio">Портфолио</a></li>
+				<li class="header-menu__item"><a href="#prices">Стоимость</a></li>
+			</ul>
+			<ul class="menu-open">
+				<li class="menu-open__service"><a href="#services">Услуги</a></li>
+				<li class="menu-open__portfolio"><a href="#portfolio">Портфолио</a></li>
+				<li class="menu-open__price"><a href="#prices">Стоимость</a></li>
+			</ul>
+			<div class="header-call">
+				<span><a href="tel:+74999957755">+7 (499) 995-55-77</a></span>
+				<form action="#" name="name">
+					<button class="order-call" aria-label="order">Заказать звонок</button>
+				</form>
+			</div>
+			<button class="phone-call" aria-label="order">
+				<i class="fa fa-phone fa-fw"></i>
+			</button>
+		</div>
+	</div>
+	
+	<!--Main-->
+
+	<div class="main">
+
+		<!--Main Presentation-->
+
+		<div class="main-presentation">
+			<div class="main-presentation-info">
+				<h1>Дмитрий Алексеев</h1>
+				<p>Frontend-разработчик и веб-верстальщик</p>
+				<form action="#" name="name">
+					<button class="main-presentation-info__button" aria-label="order">Узнать больше</button>
+				</form>
+			</div>
+		</div>
+		<div class="main-presentation-info-mobile">
+			<h1>Дмитрий Алексеев</h1>
+			<p>Frontend-разработчик и веб-верстальщик</p>
+			<form action="#" name="name">
+				<button class="main-presentation-info__button" aria-label="order">Узнать больше</button>
+			</form>
+		</div>
+
+		<!--Main-Works-->
+
+		<div class="main-works" id="services">
+			<h2>Что я делаю</h2>
+			<div class="works-list">
+				<div class="works-list__item">
+					<img src="img/work-item-1.png" alt="work-item-1">
+					<p>Вёрстка лендинг-страниц <br>и сайтов любой сложности</p>
+				</div>
+				<div class="works-list__item">
+					<img src="img/work-item-2.png" alt="work-item-2">
+					<p>Адаптивная верстка под все <br>браузеры и устройства</p>
+				</div>
+				<div class="works-list__item">
+					<img src="img/work-item-3.png" alt="work-item-3">
+					<p>Frontend-разработка <br>и программирование</p>
+				</div>
+				<div class="works-list__item">
+					<img src="img/work-item-4.png" alt="work-item-4">
+					<p>Исправление и доработка <br>существующей вёрстки</p>
+				</div>
+			</div>
+			<form action="#" name="name">
+				<button class="main-works__button" aria-label="order">Узнать стоимость</button>
+			</form>
+		</div>
+
+		<!--Main-Examples-->
+
+		<div class="main-examples" id="portfolio">
+			<h2>Примеры моих работ</h2>
+
+			<div class="slider">
+			 	<div class="slider__item">
+			 		<img src="img/examples-item-1.jpg" alt="examples-item-1">
+			 		<p>Сайт психолога Веры Антоновой</p>
+			 	</div>
+			 	<div class="slider__item">
+			 		<img src="img/examples-item-2.jpg" alt="examples-item-2">
+			 		<p>Сайт магазина детской одежды</p>
+			 	</div>
+			 	<div class="slider__item">
+			 		<img src="img/examples-item-3.jpg" alt="examples-item-3">
+			 		<p>Сайт магазина &laquo;Рыболов&raquo;</p>	
+			 	</div>
+			 	<div class="slider__item">
+			 		<img src="img/examples-item-1.jpg" alt="examples-item-1">
+			 		<p>Сайт психолога Веры Антоновой</p>
+			 	</div>
+			 	<div class="slider__item">
+			 		<img src="img/examples-item-2.jpg" alt="examples-item-2">
+			 		<p>Сайт магазина детской одежды</p>
+			 	</div>
+			 	<div class="slider__item">
+			 		<img src="img/examples-item-3.jpg" alt="examples-item-3">
+			 		<p>Сайт магазина &laquo;Рыболов&raquo;</p>	
+			 	</div>
+			</div>
+			<form action="#" name="name">
+				<button id="order-project" aria-label="order">Заказать проект</button>
+			</form>
+		</div>
+
+		<!--Main-Prices-->
+
+		<div class="main-prices" id="prices">
+			<div class="main-prices__text">
+				<h3>Адаптивная вёрстка под все устройства <br>и браузеры от 1000 рублей всего за 4 часа.*</h3>
+				<p>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, <br>в зависимости от сложности задач.</p>
+			</div>
+		</div>
+	</div>
+
+	<!--Footer-->
+
+	<div class="footer">
+		<div class="footer-container">
+			<ul class="footer-container__left">
+				<li class="footer-container__left__item"><a href="#services">Услуги</a></li>
+				<li class="footer-container__left__item"><a href="#portfolio">Портфолио</a></li>
+				<li class="footer-container__left__item"><a href="#prices">Стоимость</a></li>
+			</ul>
+			<ul class="footer-container__center">
+				<li class="footer-container__center__phone"><a href="tel:+74999957755"><i class="fa fa-phone fa-fw"></i> +7 (499) 995-77-55</a></li>
+				<li class="footer-container__center__mail"><a href="mailto:dmitry@alekseev.com"><i class="fa fa-envelope fa-fw"></i> dmitry@alekseev.com</a></li>
+			</ul>
+			<div class="footer-container__right">
+				<form action="#" name="name">
+					<button class="footer-container__call" aria-label="order">Заказать звонок</button>
+				</form>
+				<ul class="footer-container__right__networks">
+					<li><a href="https://vk.com/share.php?url=http://max-mat.ru" class="footer-container__right__networks__vk" aria-label="networks"></a></li>
+					<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmax-mat.ru%2F&amp;src=sdkpreparse" class="footer-container__right__networks__facebook" aria-label="networks"></a></li>
+					<li><a href="https://twitter.com/home?status=http://max-mat.ru" class="footer-container__right__networks__twitter" aria-label="networks"></a></li>
+					<li><a href="https://instagram.com" class="footer-container__right__networks__insta" aria-label="networks"></a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<div class="footer-bar">
+		<span>&copy; Дмитрий Алексеев, 2016 - 2018</span>
+	</div>
+</body>
+</html>
