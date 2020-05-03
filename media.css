@@ -59,7 +59,7 @@
 		url('img/Ellipse.png'), 
 		url('img/bg_info/div1.png'),
 		url('img/bg_info/div.png'),
-		url('img/bg_info/slash.png')
+		url('img/bg_info/slash.png'),
 		url('img/bg_info/grill.png'),
 		url('img/bg_info/{ }.png');
 		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
@@ -164,7 +164,7 @@
 		.main-presentation-info-mobile h1 {
 			color: #1F1F24;
 			font-size: 80px;
-			font-weight: black;
+			font-weight: 700;
 			margin: 0;
 		}
 
@@ -212,7 +212,7 @@
 	.main-presentation-info-mobile h1 {
 			color: #1F1F24;
 			font-size: 50px;
-			font-weight: black;
+			font-weight: 700;
 			margin: 0;
 		}
 
