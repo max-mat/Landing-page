@@ -34,7 +34,7 @@ $('document').ready(function() {
 			$('.popup-container__order-call').show();
 			$("body").css("overflow", "hidden");
 		})
-		$('.popup__order-call__button').click(function() {
+		$('#popup__order-call__button').click(function() {
 			$(this).parent().parent().hide();
 			$("body").css("overflow", "auto");
 		})
@@ -50,7 +50,7 @@ $('document').ready(function() {
 			$('.popup-container__order-call').show();
 			$("body").css("overflow", "hidden");
 		})
-		$('.popup__order-call__button').click(function() {
+		$('#popup__order-call__button').click(function() {
 			$(this).parent().parent().hide();
 			$("body").css("overflow", "auto");
 		})
@@ -66,7 +66,7 @@ $('document').ready(function() {
 			$('.popup-container__order-call').show();
 			$("body").css("overflow", "hidden");
 		})
-		$('.popup__order-call__button').click(function() {
+		$('#popup__order-call__button').click(function() {
 			$(this).parent().parent().hide();
 			$("body").css("overflow", "auto");
 		})
@@ -82,7 +82,7 @@ $('document').ready(function() {
 			$('.popup-container__order-call').show();
 			$("body").css("overflow", "hidden");
 		})
-		$('.popup__order-call__button').click(function() {
+		$('#popup__order-call__button').click(function() {
 			$(this).parent().parent().hide();
 			$("body").css("overflow", "auto");
 		})
@@ -95,14 +95,14 @@ $('document').ready(function() {
 	$(function() {
 		$('#order-project').click(function() {
 			 event. preventDefault(); 
-			$('.popup-container__order-project').show();
+			$('.popup-container__order-call').show();
 			$("body").css("overflow", "hidden");
 		})
-		$('.popup__order-project__button').click(function() {
+		$('#popup__order-call__button').click(function() {
 			$(this).parent().parent().hide();
 			$("body").css("overflow", "auto");
 		})
-		$('.popup__order-project__close').click(function() {
+		$('.popup__order-call__close').click(function() {
 			$(this).parent().parent().hide();
 			$("body").css("overflow", "auto");
 		})
@@ -114,7 +114,7 @@ $('document').ready(function() {
 			$('.popup-container__order-call').show();
 			$("body").css("overflow", "hidden");
 		})
-		$('.popup__order-call__button').click(function() {
+		$('#popup__order-call__button').click(function() {
 			$(this).parent().parent().hide();
 			$("body").css("overflow", "auto");
 		});

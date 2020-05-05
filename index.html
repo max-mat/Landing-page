@@ -44,38 +44,25 @@
 	<div class="popup-container__order-call">
 		<div class="popup__order-call">
 			<button class="popup__order-call__close" aria-label="close"><i class="fa fa-close fa-2x"></i></button>
-			<p>Введите Ваше Имя:</p>
-			<form action="#" name="name">
-				<input class="popup__order-call__name" type="text" name="login" placeholder="Фамилия Имя Отчество">
-			</form>
-			<p>Введите Ваш контактный телефон:</p>
-			<form action="#" name="name">
-				<input class="popup__order-call__tel" type="text" name="tel" placeholder="+7 (926) 123-45-67">
-			</form>
-			<p>Введите Ваш email:</p>
-			<form action="#" name="name">
-				<input class="popup__order-call__mail" type="email" name="mail" placeholder="my_email_adress@gmail.com">
-			</form>
-			<button class="popup__order-call__button" aria-label="send">Готово!</button>
-		</div>
-	</div>
 
-	<div class="popup-container__order-project">
-		<div class="popup__order-project">
-			<button class="popup__order-project__close" aria-label="close"><i class="fa fa-close fa-2x"></i></button>
-			<p>Сроки реализации:</p>
-			<form action="#" name="name">
-				<input class="popup__order-project__deadline" type="text" name="deadline" placeholder="До сентября 2020 года">
-			</form>
-			<p>Описание проекта:</p>
-			<form action="#" name="name">
-				<textarea class="popup__order-project__info" name="info" placeholder="Сайт книжного интернет-магазина"></textarea> 
-			</form>
+			<form action="#" method="post" name="popup__form" id="popup__form">
+
+			<p>Введите Ваше Имя:</p>
+			
+				<input class="popup__order-call__name" type="text" name="login" placeholder="Фамилия Имя Отчество">
+			
+			<p>Введите Ваш контактный телефон:</p>
+			
+				<input class="popup__order-call__tel" type="text" name="tel" placeholder="+7 (926) 123-45-67">
+			
 			<p>Введите Ваш email:</p>
-			<form action="#" name="name">
-				<input class="popup__order-project__mail" type="email" name="mail" placeholder="my_email_adress@gmail.com">
+			
+				<input class="popup__order-call__mail" type="email" name="mail" placeholder="my_email_adress@gmail.com"><br>
+			
+			<input type="submit" value="Отправить" id="popup__order-call__button" aria-label="send"></input>
+
 			</form>
-			<button class="popup__order-project__button" aria-label="send">Заказать!</button>
+
 		</div>
 	</div>
 

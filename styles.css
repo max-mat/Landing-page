@@ -42,8 +42,7 @@ button {
 
 /* Pop-up and modal window*/
 
-.popup-container__order-call,
-.popup-container__order-project {
+.popup-container__order-call {
 	display: none;
 	width: 100%;
 	height: 100%;
@@ -52,8 +51,7 @@ button {
 	z-index: 10;
 }
 
-	.popup__order-call,
-	.popup__order-project {
+	.popup__order-call {
 		width: 400px;
 		height: auto;
 		background-color: #FFFFFF;
@@ -64,45 +62,43 @@ button {
 		flex-direction: column;
 	}
 
-		.popup__order-call p,
-		.popup__order-project p {
+		.popup__order-call p {
 			font-size: 18px;
 			font-weight: 500;
 		}
 
-		.popup__order-call input,
-		.popup__order-project input {
+		.popup__order-call input {
 			min-width: 250px;
 			font-size: 16px;
 		}
 
-		.popup__order-project textarea {
-			min-width: 280px;
-			min-height: 50px;
-			font-size: 16px;
-			resize: none;
+		.popup__order-call input:active,
+		.popup__order-call input:focus {
+			outline-color: #FE458B;
 		}
 
-		.popup__order-call__button,
-		.popup__order-project__button {
+		#popup__order-call__button {
+			display: block;
 			min-width: 120px;
 			min-height: 40px;
 			background: linear-gradient(to right top, #FE8D5A, #FE2D99);
 			color: #FFFFFF;
 			font-size: 18px;
 			border: none;
-			margin-top: 20px;
-			align-self: center;
+			margin: 20px auto 0;
 			cursor: pointer;
 		}
 
-		.popup__order-call__button:hover,
-		.popup__order-project__button:hover {
+		#popup__order-call__button:hover {
 			box-shadow: 0 0 20px 5px #FE3395;
 		}
 
-		.popup__order-call__close,
-		.popup__order-project__close {
+		#popup__order-call__button:active,
+		#popup__order-call__button:focus {
+			outline: none;
+		}
+
+		.popup__order-call__close {
 			width: 30px;
 			height: 30px;
 			background: transparent;
@@ -111,14 +107,17 @@ button {
 			cursor: pointer;
 		}
 
-			.popup__order-call__close i,
-			.popup__order-project__close i {
+			.popup__order-call__close i {
 				color: #FE3395;
 			}
 
-		.popup__order-call__close:hover,
-		.popup__order-project__close:hover {
+		.popup__order-call__close:hover {
 			box-shadow: 0 0 20px 5px #FE3395;
+		}
+
+		.popup__order-call__close:active,
+		.popup__order-call__close:focus {
+			outline: none;
 		}
 
 /* Header*/
@@ -235,6 +234,11 @@ button {
 				transition: 0.2s;
 			}
 
+			.header-call button:active,
+			.header-call button:focus {
+				outline: none;
+			}
+
 		.phone-call {
 			display: none;
 		}
@@ -242,6 +246,11 @@ button {
 		.phone-call:hover {
 			box-shadow: 0 0 10px 5px #FE3395;
 			transition: 0.2s;
+		}
+
+		.phone-call:active,
+		.phone-call:focus {
+			outline: none;
 		}
 
 /*Main*/
@@ -297,6 +306,11 @@ button {
 				background-color: #FBFBFB;
 				border: 1px solid #FE4E2E;
 				transition: 0.2s;
+			}
+
+			.main-presentation-info button:active,
+			.main-presentation-info button:focus {
+				outline: none;
 			}
 
 				/*Mooving symbols on background*/
@@ -422,6 +436,11 @@ button {
 			transition: 0.2s;
 		}
 
+		.main-works button:active,
+		.main-works button:focus {
+			outline: none;
+		}
+
 	/*Main-examples*/
 
 	.main-examples {
@@ -528,6 +547,11 @@ button {
 			color: #FE4E2E;
 			border: 1px solid #FE4E2E;
 			transition: 0.2s;
+		}
+
+		#order-project:active,
+		#order-project:focus {
+			outline: none;
 		}
 
 	/*Main-prices*/
@@ -639,6 +663,11 @@ button {
 				background-color: #F54A57;
 				color: #FFFFFF;
 				transition: 0.2s;
+			}
+
+			.footer-container__right button:active,
+			.footer-container__right button:focus {
+				outline: none;
 			}
 
 			.footer-container__right__networks {
