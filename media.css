@@ -45,6 +45,11 @@
 			box-shadow: 0 0 20px 5px #FE448C;
 		}
 
+		.menu-button:active,
+		.menu-button:focus {
+			outline: none;
+		}
+
 		.menu-button__close {
 			border: none;
   			background: url('img/menu-button__close.png') no-repeat center/cover;
@@ -141,10 +146,16 @@
 			}
 
 	.main-presentation {
-		background-image: url('img/man.png'), url('img/Ellipse.png');
-		background-repeat: no-repeat, no-repeat;
-		background-position: 70% 100%, 100% 100%;
-		background-size: auto, auto 550px;
+		background-image: url('img/man.png'), 
+		url('img/Ellipse.png'), 
+		url('img/bg_info/div1.png'),
+		url('img/bg_info/div.png'),
+		url('img/bg_info/slash.png'),
+		url('img/bg_info/grill.png'),
+		url('img/bg_info/{ }.png');
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+		background-position: 70% 100%, 100% 100%, 200px 140px, 935px 55px, 670px 50px, 60px 545px, 80px 30px;
+		background-size: auto, auto 550px, auto, auto, auto, auto, auto, auto, auto;
 	}
 
 	.main-presentation-info {
@@ -275,12 +286,28 @@
 }
 
 .main-presentation {
-	height: 400px;
-	background-image: url('img/man.png'), url('img/Ellipse.png');
+	min-height: 400px;
+	/*background-image: url('img/man.png'), url('img/Ellipse.png');
 	background-repeat: no-repeat, no-repeat;
 	background-position: 70% 100%, 100% 100%;
-	background-size: auto 330px, auto 295px;
+	background-size: auto 330px, auto 295px;*/
+
+
+	background-image: url('img/man.png'), 
+	url('img/Ellipse.png'), 
+	url('img/bg_info/div1.png'),
+	url('img/bg_info/div.png'),
+	url('img/bg_info/slash.png'),
+	url('img/bg_info/grill.png'),
+	url('img/bg_info/{ }.png');
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-position: 70% 100%, 100% 100%, 100px 300px, 250px 35px, 150px 130px, 15px 210px, 45px 20px;
+	background-size: auto 330px, auto 295px, auto 25px, auto 25px, auto 35px, auto 35px, auto 35px;
 }
+
+	.main-presentation-info {
+		max-height: 400px;
+	}
 
 	.main-presentation-info-mobile {
 		height: 210px;
@@ -334,8 +361,7 @@
 
 @media (max-width: 500px) {
 
-	.popup__order-call,
-	.popup__order-project {
+	.popup__order-call {
 		width: 280px;
 		padding: 15px;
 		margin-top: 50px;
